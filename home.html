@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css">
+
+  <style>
+    #home {
+      background-image: url("https://wallpapercave.com/wp/wp5727289.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .test {
+  background-color: rgb(107, 107, 165);
+}
+    
+  </style>
+  <script src="java.js"></script>
+  <script>
+        window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("topnav").className = "test";
+  } else {
+    document.getElementById("topnav").className = "";
+  }
+}
+  </script>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  
+  <title>
+    My Portfolio
+  </title>
+</head>
+
+<body style="height:1500px">
+
+  <div id="topnav">
+
+    <div style="display: inline-flex; float: left;">
+      <img src="../major html project/logo.JPG" alt="logo" style="width: 150px; height: 80px;">
+
+
+    </div>
+
+    <div style="display: inline-flex;float: right;">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="../major html project/login.html">Log out</a>
+
+    </div>
+  </div>
+  <div id="myBtn"><a href="#home">Top</a></div>
+  <div id="home">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2 style=" font-size: 60px;">Hi! My Name Is </h2>
+    <h1 style="color: rgb(218, 25, 25); font-size: larger;font-size: 80px;">Nehal Jain</h1>
+    <h2>And I am a
+      <span style="color: rgb(218, 25, 25);" class="txt-rotate" data-period="2000"
+        data-rotate='[ "student.", "coder.", "learner.", "developer." ]'></span>
+    </h2>
+    <br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+
+  </div>
+  <div id="about">
+    <br><br><br><br>
+    <h1><u>About Me!</u></h1>
+    <h3>know about me</h3>
+    
+    <br><br>
+    <div class="left">
+
+      <img class="profile" src="../major html project/my photo crop.jpg"
+        style="height: 400px;width: 500px; margin-left: 50px;margin-right: 50px; border-radius: 50px;">
+        <img class="profile" src="https://wallpaperaccess.com/full/2740271.jpg"
+         style="height: 400px;width: 500px; margin-left: 50px;margin-right: 50px; border-radius: 50px;">
+         <script>
+          w3.slideshow(".profile", 1500);
+          </script>
+    </div>
+    <div class="right">
+      <h3 style="text-align: left; color: black;"> I'm Nehal and I'm a
+        <span style="color: rgb(218, 25, 25);" class="txt-rotate" data-period="2000"
+          data-rotate='[ "student.", "coder.", "learner.", "developer." ]'></span>
+      </h3>
+      <pre style="text-align: left;">
+        A web developer or programmer.
+
+        I currently study Btech CSE in Jaypee Institute Of Information Technology.
+
+        I am open and passionate to learn new things in life and increase my experience.
+
+        Working on many languages and still learning more.
+
+        Right now looking for a good apportunity to increase my horizones.
+
+        Flexible with working hours.
+
+      </pre>
+      <a href="../major html project/nehal cv.pdf" target="_blank" download><button>Download CV</button></a>
+      </a>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+  </div>
+
+  <div id="skills">
+    <br><br><br><br>
+    <h1><u>My Skills</u></h1>
+    <h3>what I know</h3>
+    <div class="left">
+      <h2 style="color: rgb(105, 104, 104); text-shadow:2px 2px 5px rgb(105, 104, 104);"><b>MY CREATIVE SKILLS AND EXPERIENCES:</b></h2>
+      <br>
+      <p>
+      <ul>
+        <li>Constantly learning and improving.</li>
+        <li>Computer programming languages and coding
+          <ol>
+            <li>C</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+          </ol>
+        </li>
+        <li>Database
+          <ol>
+            <li>SQL server</li>
+            <li>MySQL</li>
+          </ol>
+        </li>
+        <li>Problem solving</li>
+        <li>Logical thinking</li>
+      </ul>
+      <p id="readmore" style="text-align: left;"></p>
+      </p>
+      <button id="btn" onClick="return readmore()" style="float: left;">Read More</button>
+
+    </div>
+    <div class="right">
+      <div class="bar">
+        JAVA<br>
+        <div id="progress">
+          <div id="progjava" value="95"></div>
+        </div><br>
+        CSS<br>
+        <div id="progress">
+          <div id="progcss" value="85"></div>
+        </div><br>
+        HTML<br>
+        <div id="progress">
+          <div id="proghtml" value="100"></div>
+        </div>
+        <br>C<br>
+        <div id="progress">
+          <div id="progc" value="90"></div>
+        </div>
+        <br>MYSQL<br>
+        <div id="progress">
+          <div id="progmysql" value="70"></div>
+        </div>
+        <br>PYTHON<br>
+        <div id="progress">
+          <div id="progpython" value="100"></div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+  <div id="contact">
+    <br><br>
+    <h1><u>Contact Me</u></h1>
+    <h3>get in touch</h3>
+    <form name="contact">
+      <div class="left">
+        <h2 style=" color: rgb(105, 104, 104);text-shadow:2px 2px 5px rgb(105, 104, 104);"><b>CONTACT INFORMATION :</b></h2>
+        <br>
+        <pre>If you wish to contact me for any assisatance/information please feel free 
+            to contact me through following mediums:</pre>
+        <p>
+          <i class="fas fa-id-badge" style="color: red;"></i>
+          NAME:<br> Nehal Jain
+        </p>
+        <P>
+          <i class="fas fa-map-marker-alt" style="color: red;"></i>
+          ADDRESS: <br> FIROZABAD,UTTAR PRADESH
+        </P>
+        <p>
+          <i class="fas fa-at" style="color: red;"></i>
+          EMAIL:<br> 20103249@mail.jiit.ac.in
+        </p>
+      </div>
+      <div class="right">
+        <h3 >Message Me!!</h3>
+        <input type="text" id="uname" name="uname" placeholder="Enter Username" ;><br><br><br>
+        <input type="text" id="uemail" name="uemail" placeholder="Enter Email Address"><br><br><br>
+        <input type="text" id="usubject" name="usubject" placeholder="Subject"><br><br><br>
+        <input type="text" id="umessage" name="umessage" placeholder="Message" style="height: 100px;"><br><br><br>
+        <button id="button" type="submit">Send Message</button>
+      </div>
+    </form>
+
+    <script src="https://kit.fontawesome.com/4519dd7569.js" crossorigin="anonymous"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzGmUJr9KyX-UfJwoyW0MgGq63vSd4PbfnGm3-1EUlku4dhL45r9F3Y-hhndqjgmAB0/exec'
+      const form = document.forms['contact']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+  </div>
+  <div class="footer">
+    <p><b>Created by Nehal Jain - 2021</b></p>
+  </div>
+</body>
+
+</html>

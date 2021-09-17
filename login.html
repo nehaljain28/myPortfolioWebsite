@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript">
+        function validate() {
+            var flag = 0;
+            var email = document.getElementById("email").value;
+
+            if (email) {
+                document.getElementById("emailError").innerHTML = "";
+                document.getElementById("email").style.borderColor = "green";
+            }
+            if (!ValidateEmail(email)) {
+                if (!email) {
+                    document.getElementById("emailError").innerHTML = "Email cannot be blank";
+
+                }
+                else {
+                    document.getElementById("emailError").innerHTML = "Not a correct format";
+                }
+                flag = 1;
+                document.getElementById("email").style.borderColor = "red";
+
+            }
+            var password = document.getElementById("password").value;
+            if (!password) {
+                document.getElementById("passwordError").innerHTML = "Password cannot be blank";
+                document.getElementById("password").style.borderColor = "red";
+                flag = 1;
+            }
+            if (password) {
+                document.getElementById("passwordError").innerHTML = "";
+                document.getElementById("password").style.borderColor = "green";
+            }
+            var passwordcheck = document.getElementById("passwordcheck").value;
+            if (!passwordcheck) {
+                document.getElementById("passwordcheckError").innerHTML = "Password check cannot be blank";
+                document.getElementById("passwordcheck").style.borderColor = "red";
+                flag = 1;
+            }
+            if (passwordcheck) {
+                document.getElementById("passwordcheckError").innerHTML = "";
+                document.getElementById("passwordcheck").style.borderColor = "green";
+            }
+            if (password != passwordcheck) {
+                document.getElementById("passwordcheckError").innerHTML = "Does not match with password";
+                document.getElementById("passwordcheck").style.borderColor = "red";
+                flag = 1;
+            }
+
+            function ValidateEmail(email) {
+                var e = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                if (e.test(email)) {
+                    return (true);
+                }
+                return (false);
+            }
+
+            if (flag) {
+                return false;
+            }
+            return true;
+
+        }
+            
+         
+    </script>
+    <style>
+        body {
+            background-image: url("https://wallpapercave.com/wp/wp3272182.jpg");
+        }
+
+        p {
+            color: red;
+        }
+    </style>
+    <title>
+        Sign In
+    </title>
+
+</head>
+
+<body>
+    <div class="forms">
+        <div class="signinbg"><br><b>
+                <h2 style="color: black;"><u>SIGN IN FORM</u></h2><br>
+            </b></div>
+        
+        <form style="background-color: white; border-radius: 0px 0px 20px 20px;" action="../major html project/home.html">
+            <br><label for="email">Username</label><br><br>
+            <input type="text" placeholder="enter username" id="email"><br>
+            <p id="emailError"></p><br><br>
+            <label for="password">Password</label><br><br>
+            <input type="password" placeholder="enter password" id="password"><br>
+            <p id="passwordError"></p><br><br>
+            <label for="passwordcheck">Password Check</label><br><br>
+            <input type="password" placeholder="enter password again" id="passwordcheck"><br>
+            <p id="passwordcheckError"></p><br><br>
+            <button style="height: 30px; width: 300px; color: white;" onClick="return validate()" >SIGN
+                IN</button>
+            <button style="height: 30px; width: 300px; color: white;" type="reset" >RESET</button>
+            <br><br><br>
+        </form>
+    </div>
+</body>
+
+</html>
